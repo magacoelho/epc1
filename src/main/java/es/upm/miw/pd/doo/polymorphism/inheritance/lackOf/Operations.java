@@ -1,9 +1,9 @@
 package es.upm.miw.pd.doo.polymorphism.inheritance.lackOf;
 
 public class Operations {
-    private Object[] operators = new Object[10];
+    private Operation[]  operators = new Operation[10];
 
-    public void add(Object operator) {
+    public void add(Operation operator) {
         for (int i = 0; i < operators.length; i++) {
             if (operators[i] == null) {
                 operators[i] = operator;
@@ -24,14 +24,10 @@ public class Operations {
     public int total() {
         int result = 0;
         String separator = "";
-        for (Object operando : operators) {
+        for (Operation operando : operators) {
             if (operando != null) {
                 System.out.print(separator + operando.toString());
-                if (operando.getClass().getSimpleName().equals("Addition")) {
-                    result += ((Addition) operando).sum();
-                } else {
-                    result += ((Subtraction) operando).subtract();
-                }
+                  operando.operar();
             }
             separator = "+";
         }

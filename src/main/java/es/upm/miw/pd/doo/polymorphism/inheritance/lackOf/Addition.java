@@ -12,7 +12,6 @@ public class Addition extends Operation {
 
 	@Override
 	public int operar() {
-		
 		return sum();
 	}
 
