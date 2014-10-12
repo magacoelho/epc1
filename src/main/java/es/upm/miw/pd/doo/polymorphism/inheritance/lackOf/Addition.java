@@ -10,4 +10,10 @@ public class Addition extends Operation {
         return this.operator1 + this.operator2;
     }
 
+	@Override
+	public int operar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
