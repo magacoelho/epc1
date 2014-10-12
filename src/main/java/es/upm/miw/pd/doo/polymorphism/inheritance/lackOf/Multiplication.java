@@ -6,13 +6,13 @@ public class Multiplication extends Operation {
         this.sign= "*";
     }
 
-    private int sum() {
-        return this.operator1 + this.operator2;
+    private int multiplication() {
+        return this.operator1 * this.operator2;
     }
 
 	@Override
 	public int operar() {
-		return sum();
+		return multiplication();
 	}
 
 }
