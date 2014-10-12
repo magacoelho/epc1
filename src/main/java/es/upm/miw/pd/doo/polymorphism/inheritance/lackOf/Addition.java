@@ -6,14 +6,14 @@ public class Addition extends Operation {
         this.sign= "+";
     }
 
-    public int sum() {
+    private int sum() {
         return this.operator1 + this.operator2;
     }
 
 	@Override
 	public int operar() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return sum();
 	}
 
 }
