@@ -12,12 +12,7 @@ public class Subtraction extends Operation {
         return this.operator1 - this.operator2;
     }
 
-    @Override
-    public String toString() {
-        return "[" + operator1 + "-" + operator2 + "]";
-    }
-
-	@Override
+   	@Override
 	public int operar() {
 		
 		return subtract();
