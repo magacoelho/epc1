@@ -6,10 +6,9 @@ import java.util.Map;
 public class GestorVehiculos {
     private Map<Integer,Vehiculo> vehiculos= VehiculosMap.vehiculos; 
     public void darAlta(Vehiculo v) {
-        
         vehiculos.put(v.getId(),v);
-        
-    }
+        VehiculosMap.vehiculos= vehiculos;
+      }
 
     public String todosVehiculos() {
         // TODO Auto-generated method stub
