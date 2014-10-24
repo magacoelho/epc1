@@ -19,6 +19,12 @@ public class Coche extends Vehiculo{
     public void setCategoria(char categoria) {
         this.categoria = categoria;
     }
-    
 
+    @Override
+    public String toString() {
+        return "Coche [categoria=" + categoria + ", getId()=" + getId() + ", getDescripcion()="
+                + getDescripcion() + "]";
+    }
+    
+   
 }

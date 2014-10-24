@@ -24,6 +24,10 @@ public class Vehiculo {
     public void setId(Integer id) {
         this.id = id;
     }
+    @Override
+    public String toString() {
+        return "Vehiculo [id=" + id + ", descripcion=" + descripcion + "]";
+    }
    
 
 }
