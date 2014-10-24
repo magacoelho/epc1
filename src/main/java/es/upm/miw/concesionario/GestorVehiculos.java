@@ -1,15 +1,25 @@
 package es.upm.miw.concesionario;
 
-public class GestorVehiculos {
+import java.util.Iterator;
+import java.util.Map;
 
+public class GestorVehiculos {
+    private Map<Integer,Vehiculo> vehiculos; 
     public void darAlta(Vehiculo v) {
-        // TODO Auto-generated method stub
+        
+        vehiculos.put(v.getId(),v);
         
     }
 
     public String todosVehiculos() {
         // TODO Auto-generated method stub
-        return null;
+        String cadena ="";
+        Iterator it = vehiculos.keySet().iterator();
+        while(it.hasNext()){
+          Integer key = (Integer) it.next();
+          cadena= cadena + vehiculos.get(key);
+        }
+        return cadena;
     }
 
 }
