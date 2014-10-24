@@ -5,7 +5,7 @@ public class Moto extends Vehiculo{
         super();
     }
     public Moto(Integer id, String descripcion, double precioBase) {
-        super(id, descripcion, precioBase);
+        super(id, descripcion);
     }
     @Override
     public String toString() {
@@ -13,7 +13,15 @@ public class Moto extends Vehiculo{
     }
     @Override
     public double determinarAlquiler(int dias) {
-        double precioBase = this.getPrecioBase();
+        double precioBase = 0.0;
+        double valor = 0;
+        
+        if(dias<=7)
+        {
+          valor = 8*dias;    
+            
+        }
+        
         return 0;
     }
      

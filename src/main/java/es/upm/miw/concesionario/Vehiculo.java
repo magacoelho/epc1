@@ -3,7 +3,7 @@ package es.upm.miw.concesionario;
 public abstract class Vehiculo implements AlquilerVehiculo{
    private Integer id;
    private  String descripcion;
-   private double precioBase;
+  
    
     public Vehiculo() {
     super();
@@ -16,13 +16,9 @@ public abstract class Vehiculo implements AlquilerVehiculo{
        
     }
 
-    public double getPrecioBase() {
-        return precioBase;
-    }
+   
 
-    public void setPrecioBase(double precioBase) {
-        this.precioBase = precioBase;
-    }
+    
 
     public Integer getId() {
           return this.id;
