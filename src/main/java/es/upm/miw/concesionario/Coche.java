@@ -25,6 +25,14 @@ public class Coche extends Vehiculo{
         return "Coche [categoria=" + categoria + ", getId()=" + getId() + ", getDescripcion()="
                 + getDescripcion() + "]";
     }
+
+    @Override
+    public double determinarAlquiler(int dias) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+   
     
    
 }
