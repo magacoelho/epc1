@@ -1,15 +1,16 @@
 package es.upm.miw.concesionario;
 
 public class Concesionario {
-
+     GestorVehiculos gestorVehiculos= new GestorVehiculos();
+     GestorAlquiler gestorAlquiler= new GestorAlquiler();
      public void darAlta(Vehiculo v){
-         
+         gestorVehiculos.darAlta(v);
      }
      public  String todosVehiculos(){
-         return null;
+         return gestorVehiculos.todosVehiculos();
      }
      public double determinarAlquiler(int id, int dias){
          
-         return 0.0;
+         return gestorAlquiler.determinarAlquiler(id, dias);
      }
 }
