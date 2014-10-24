@@ -4,8 +4,8 @@ public class Moto extends Vehiculo{
     public Moto() {
         super();
     }
-    public Moto(Integer id, String descripcion) {
-        super(id, descripcion);
+    public Moto(Integer id, String descripcion, double precioBase) {
+        super(id, descripcion, precioBase);
     }
     @Override
     public String toString() {
@@ -13,7 +13,7 @@ public class Moto extends Vehiculo{
     }
     @Override
     public double determinarAlquiler(int dias) {
-        // TODO Auto-generated method stub
+        double precioBase = this.getPrecioBase();
         return 0;
     }
      

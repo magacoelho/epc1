@@ -38,6 +38,7 @@ public class Coche extends Vehiculo{
         case 'C': precioBase=20;          
         
         }
+        this.setPrecioBase(precioBase);
         if(dias<=3){
              valor = precioBase*dias;
              }

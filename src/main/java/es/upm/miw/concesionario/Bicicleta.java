@@ -7,8 +7,8 @@ public class Bicicleta extends Vehiculo {
        
     }
 
-    public Bicicleta(Integer id, String descripcion) {
-        super(id, descripcion);
+    public Bicicleta(Integer id, String descripcion, double precioBase) {
+        super(id, descripcion, precioBase);
        
     }
 
