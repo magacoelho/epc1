@@ -21,8 +21,12 @@ public class Moto extends Vehiculo{
           valor = 8*dias;    
             
         }
+        else
+        {
+            valor =8*dias+7*(dias-7);
+        }
         
-        return 0;
+        return valor;
     }
      
 

@@ -19,7 +19,12 @@ public class Bicicleta extends Vehiculo {
 
     @Override
     public double determinarAlquiler(int dias) {
-        // TODO Auto-generated method stub
+        double valor=0;
+        if(dias<=2)
+            valor= dias*3;
+        else
+            valor =dias*3+ (dias-2)*2;
+        
         return 0;
     }
 
