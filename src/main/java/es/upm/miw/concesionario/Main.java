@@ -1,10 +1,8 @@
 package es.upm.miw.concesionario;
 
+import upm.jbb.IO;
+
 public class Main {
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
-    }
+   
 
 }
