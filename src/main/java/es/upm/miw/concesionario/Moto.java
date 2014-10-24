@@ -4,7 +4,7 @@ public class Moto extends Vehiculo{
     public Moto() {
         super();
     }
-    public Moto(Integer id, String descripcion, double precioBase) {
+    public Moto(Integer id, String descripcion) {
         super(id, descripcion);
     }
     @Override
