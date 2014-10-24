@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class VehiculosMap {
-    private Map<Integer,Vehiculo> vehiculos; 
+    public static Map<Integer,Vehiculo> vehiculos; 
     public VehiculosMap() {
        vehiculos= new HashMap<Integer,Vehiculo>();
     }
@@ -14,5 +14,6 @@ public class VehiculosMap {
         vehiculos.put(3, new Bicicleta(3,"Monark bici"));
         vehiculos.put(4, new Moto(4,"Susuiki"));
     }
+    
 
 }

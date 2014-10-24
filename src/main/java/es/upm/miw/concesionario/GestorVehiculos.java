@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class GestorVehiculos {
-    private Map<Integer,Vehiculo> vehiculos; 
+    private Map<Integer,Vehiculo> vehiculos= VehiculosMap.vehiculos; 
     public void darAlta(Vehiculo v) {
         
         vehiculos.put(v.getId(),v);
